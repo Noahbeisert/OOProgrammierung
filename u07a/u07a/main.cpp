@@ -13,16 +13,21 @@ int main() {
 	for (int i = 0; i < 8; i++) {
 		array[i].ausgabe();
 	}
+	cout << "Ende ausgabe array." << endl;
 	cBruch ergebnis;
-	ergebnis.addition(bruch1, bruch2);
-	ergebnis.ausgabe();
-	ergebnis.subtraktion(bruch3, bruch4);
-	ergebnis.ausgabe();
-	ergebnis.multiplikation(bruch5, bruch6);
-	ergebnis.ausgabe();
-	ergebnis.division(bruch7, bruch8);
-	ergebnis.ausgabe();
-	array->sortieren(array);
+	cBruch addition = ergebnis.addition(bruch1, bruch2);
+	cout << "Addition:" << endl;
+	addition.ausgabe();
+	cBruch substr = ergebnis.subtraktion(bruch3, bruch4);
+	cout << "Substraktion: " << endl;
+	substr.ausgabe();
+	cBruch multi = ergebnis.multiplikation(bruch5, bruch6);
+	cout << "Multiplikation:" << endl;
+	multi.ausgabe();
+	cBruch divi = ergebnis.division(bruch7, bruch8);
+	cout << "Division:" << endl;
+	divi.ausgabe();
+	array->sortieren(array,8);
 	cout << "sortierte ausgabe: " << endl;
 	for (int i = 0; i < 8; i++) {
 		array[i].ausgabe();

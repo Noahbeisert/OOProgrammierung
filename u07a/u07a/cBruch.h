@@ -19,8 +19,8 @@ public:
 	cBruch subtraktion(cBruch bruch1, cBruch bruch2);
 	cBruch multiplikation(cBruch bruch1, cBruch bruch2);
 	cBruch division(cBruch bruch1, cBruch bruch2);
-	void tauschen(cBruch bruch1, cBruch bruch2);
-	void sortieren(cBruch array[]);
+	void tauschen(cBruch array[], int ix1, int ix2,int lengtharray);
+	void sortieren(cBruch array[], int lengtharray);
 	bool vergleichen(cBruch bruch1, cBruch bruch2);
 	cBruch(int zaehler_in = 0, int nenner_in = 0);
 };
